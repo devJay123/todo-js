@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Chrome</title>
+
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="/script/todo.js" defer></script>
+    <script src="/script/weather.js" defer></script>
+  </head>
+  <body>
+    <div class="video_box">
+      <iframe
+        width="270"
+        height="150"
+        src="https://www.youtube.com/embed/vfWwL4N8CM4?si=GMbgLXKFMYSHJYA0?mute=1&autoplay=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <p>Playlist</p>
+    </div>
+    <main>
+      <div class="container">
+        <div class="home-menu">
+          <div class="home">
+            <h1>My home</h1>
+          </div>
+          <div class="menu">
+            <h2>menu</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="todo_box">
+            <h3>Todo List</h3>
+            <div class="todo-input">
+              <form id="todo-form" class="todo-form" action="">
+                <input type="text" id="todo" name="todo" />
+                <button type="submit">
+                  <img src="/src/add_white.png" alt="" />
+                </button>
+              </form>
+            </div>
+
+            <div class="todo-list-box">
+              <h4>Todo</h4>
+              <ul id="todo-list"></ul>
+            </div>
+
+            <div class="done-list-box">
+              <h4>Done</h4>
+              <ul id="done-list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
